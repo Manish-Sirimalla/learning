@@ -1,2 +1,2 @@
 # learning
-this is second repo on github
+this is second repo on github ooo
