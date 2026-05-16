@@ -1,11 +1,11 @@
 function climbStairs(n){
-    if(n==1){
-        return 1;
-    
+    const ways=[];
+    ways[1]=1
+    ways[2]=2
+    for(let i=3 ; i<=n;i++){
+        ways[i]=ways[i-1]+ways[i-2]
     }
-    if (n==2){
-        return 2;
-    }
-     return climbStairs(n-1)+climbStairs(n-2);
+    return ways[n]
+
 }
-console.log(climbStairs(9))
+console.log(climbStairs(4))
